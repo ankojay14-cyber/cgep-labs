@@ -57,11 +57,6 @@ terraform destroy -var="project_name=cgep-lab" -var="environment=dev"
 ```
 
 ## Project structure
-```
-Press Enter. Your prompt should change to `>` (this means bash is now waiting for the content).
-
-**Step 2** — now type each of these lines, pressing Enter after every single one:
-```
 terraform/primitives/compliant-s3/
   main.tf          11 AWS resources covering SC-28, AC-3, CM-6, AU-3
   variables.tf     project_name, environment, bucket_suffix
@@ -70,5 +65,3 @@ evidence/lab-2-3/
   plan.json        Pre-deploy intent (terraform show -json tfplan)
   state.json       Post-deploy state confirming controls are active
 
-**Step 3** — close the heredoc:
-```bash
