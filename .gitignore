@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Terraform working files (never publish these)
 .terraform/
 .terraform.lock.hcl
@@ -11,11 +10,3 @@ crash.log
 
 # OS noise
 .DS_Store
-=======
-*.tfstate
-*.tfstate.*
-.terraform/
-.terraform.lock.hcl
-tfplan
-*.tfvars
->>>>>>> 59e83bc (Lab 2.4: compliant GCS module + consumers + evidence)
