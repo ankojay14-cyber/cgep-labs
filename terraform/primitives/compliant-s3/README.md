@@ -28,11 +28,25 @@ This is the starting point of the compliance evidence chain. A GRC engineer who 
 **Random suffix on bucket names.** A `random_id` resource appends a unique suffix to both bucket names, since S3 bucket names are globally unique across all of AWS.
 
 ## 4. Results
-
 Verified evidence from `state.json`:
+
+- **SC-28** — `server_side_encryption_configuration[].rule[].apply_server_side_encryption_by_default[].sse_algorithm` = `"AES256"` on both buckets
+- **AC-3** — `public_access_block` on both buckets: all four flags (`block_public_acls`, `block_public_policy`, `ignore_public_acls`, `restrict_public_buckets`) = `true`
+- **AU-3** — `logging[].target_bucket` on the primary bucket points to the log bucket
+- **AU-6** — log bucket exists as a separate, independently-secured resource
+- **CM-6** — all four required tags (`Project`, `Environment`, `ManagedBy`, `ComplianceScope`) present via `default_tags`
 
 Deployment output:
 
+```
+Apply complete! Resources: 11 added, 0 changed, 0 destroyed.
+
+Outputs:
+bucket_arn = "arn:aws:s3:::cgep-lab-dev-data-XXXXXXXX"
+bucket_name = "cgep-lab-dev-data-XXXXXXXX"
+encryption_algorithm = "AES256"
+log_bucket_arn = "arn:aws:s3:::cgep-lab-dev-logs-XXXXXXXX"
+```
 ## 5. How to reproduce
 
 **Prerequisites:** Terraform >= 1.6, AWS CLI with a configured `default` profile.
@@ -56,4 +70,4 @@ terraform show -json       > ../../../evidence/lab-2-3/state.json
 terraform destroy -auto-approve -var="project_name=cgep-lab" -var="environment=dev"
 ```
 
-## Project structure
+
