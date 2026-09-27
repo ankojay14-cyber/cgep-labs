@@ -1,0 +1,7 @@
+# tfsec exclusions for compliant-s3
+exclude:
+  # SC-28 is satisfied by default server-side encryption (verified by the Conftest
+  # sc28_aws policy). A customer-managed KMS key is not required for this lab
+  # bucket; revisit if the data classification requires customer key control.
+  - aws-s3-encryption-customer-key
+  
