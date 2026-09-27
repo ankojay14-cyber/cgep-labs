@@ -9,3 +9,4 @@ Hands-on labs mapping infrastructure-as-code to NIST 800-53 controls, building t
 | 2.5 | Object Lock evidence vault (AWS) and `capture-evidence.sh`, hashing and archiving Terraform plan/state as tamper-resistant evidence | [evidence/lab-2-5](evidence/lab-2-5) |
 | 3.3 | Rego compliance policies (GCP) for SC-28, AC-3, CM-6, with OPA unit tests and a Terraform-plan fixture | [evidence/lab-3-3](evidence/lab-3-3) |
 | 3.4 | AWS variants of the same three policies, plus `policy-gate.sh` wiring the full six-policy library into a Conftest CI gate | [evidence/lab-3-4](evidence/lab-3-4) |
+| 4.4 | Keyless Cosign/Sigstore signing of each run's evidence bundle, uploaded to the Object Lock vault with a receipt, plus `verify-evidence.sh` proving authenticity, integrity, timeliness and preservation (`CHAIN INTACT`), enforcing AU-9, AU-10, SI-7 | [evidence/lab-4-4](evidence/lab-4-4) |
