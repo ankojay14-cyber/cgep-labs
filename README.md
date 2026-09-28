@@ -1,6 +1,6 @@
 # CGEP Labs
 
-Hands-on labs mapping infrastructure-as-code to NIST 800-53 controls, building toward a Policy-as-Code capstone. Each lab's evidence is captured as JSON, not screenshots.
+Hands-on GRC Engineering labs that translate NIST 800-53 requirements into infrastructure-as-code, Policy-as-Code, automated compliance testing, and tamper-resistant evidence collection. Each lab produces machine-readable JSON evidence rather than relying on screenshots. 
 
 | Lab | What it built | Evidence |
 |---|---|---|
