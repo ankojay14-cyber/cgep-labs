@@ -24,7 +24,7 @@ documentation of the CM-family gap.
 - `evidence/lab-5-2/security-hub-findings.json`: Security Hub findings captured 2026-10-03
   (account 804450520828, us-east-1)
 - Vault: `cgep-lab-grc-evidence-vault-67bbfb2f`, key `runs/lab-5-2/security-hub-findings.json`
-- Vault VersionId: bv9.1DUBPSvWf0YydQvk.sxZH21mhgUu
+- Vault VersionId: 1_P6ZcFUzCSspopsD9ggi5beoFWyPfaA
 - Object Lock: GOVERNANCE mode, retained until 2026-10-05T00:10Z (applied by bucket default on upload)
 
 ## Deploy / teardown
