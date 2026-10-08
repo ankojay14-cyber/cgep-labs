@@ -1,0 +1,18 @@
+name: WIF demo
+on: workflow_dispatch
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  gcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/517594841465/locations/global/workloadIdentityPools/github-actions/providers/github
+          service_account: cgep-grc-gate-sa@project-ac718b3e-a9c2-49e8-9ee.iam.gserviceaccount.com
+      - uses: google-github-actions/setup-gcloud@v2
+      - run: gcloud auth list
+      - run: gcloud iam workload-identity-pools list --location=global --project=project-ac718b3e-a9c2-49e8-9ee
