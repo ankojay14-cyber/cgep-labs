@@ -1,0 +1,6 @@
+Completed 368 Bytes/12.5 KiB (731 Bytes/s) with 4 file(s) remainingdownload: s3://cgep-lab-grc-evidence-vault-67bbfb2f/runs/38115197838/receipt.json to .\receipt.json
+Completed 368 Bytes/12.5 KiB (731 Bytes/s) with 3 file(s) remainingCompleted 3.9 KiB/12.5 KiB (7.6 KiB/s) with 3 file(s) remaining    download: s3://cgep-lab-grc-evidence-vault-67bbfb2f/runs/38115197838/evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz to .\evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz
+Completed 3.9 KiB/12.5 KiB (7.6 KiB/s) with 2 file(s) remainingCompleted 12.5 KiB/12.5 KiB (24.1 KiB/s) with 2 file(s) remainingdownload: s3://cgep-lab-grc-evidence-vault-67bbfb2f/runs/38115197838/evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz.sig.bundle to .\evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz.sig.bundle
+Completed 12.5 KiB/12.5 KiB (24.1 KiB/s) with 1 file(s) remainingCompleted 12.5 KiB/12.5 KiB (23.8 KiB/s) with 1 file(s) remainingdownload: s3://cgep-lab-grc-evidence-vault-67bbfb2f/runs/38115197838/evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz.sha256 to .\evidence-38115197838-8e82fc76c7f02ed1a4033e2abdf242eb69e471fe.tar.gz.sha256
+Verified OK
+CHAIN INTACT for run 38115197838
